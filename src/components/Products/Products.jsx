@@ -4,13 +4,10 @@ import Product from './Product/Product';
 
 import useStyles from './styles';
 
-const products = [
-  { id: 1, name: 'Shoes', description: 'Running shoes.', price: '$5', image: "https://www.tennisnuts.com/images/product/full/g_Nike-Free-50-Mens-Running-Shoe-642198_061_A_PREM.jpg" },
-  { id: 2, name: 'Macbook', description: 'Apple Macbook.', price: '$10', image: "https://cdn.wccftech.com/wp-content/uploads/2020/05/2020-13-inch-MacBook-Pro-6.jpg" },
-]
 
-const Products = () => {
+const Products = ({ products }) => {
   const classes = useStyles()
+
 
   return (
   <main className={classes.content}>
