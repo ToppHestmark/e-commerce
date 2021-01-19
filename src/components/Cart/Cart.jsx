@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import useStyles from './styles';
 import CartItem from './CartItem/CartItem';
+import Checkout from '../CheckoutForm/Checkout/Checkout';
 
 const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart }) => {
   const classes = useStyles();
@@ -47,6 +48,8 @@ const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart
                 Empty Cart
             </Button>
             <Button 
+              component={Link} 
+              to="/checkout"
               className={classes.checkoutButton}
               size="large" 
               type="button" 
@@ -65,7 +68,13 @@ const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart
   return (
     <Container>
       <div className={classes.toolbar} />
-      <Typography className={classes.title} variant="h3" gutterBottom>Your Shopping Cart</Typography> 
+      <Typography 
+        className={classes.title} 
+        variant="h3" 
+        gutterBottom
+        >
+          Your Shopping Cart
+        </Typography> 
       { !cart.line_items.length ? <EmptyCart /> : <FilledCart />}
     </Container>
   )
