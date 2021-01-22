@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { commerce } from "./lib/commerce";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Products, Navbar, Cart, Checkout } from "./components";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Banner from "./components/Banner/Banner";
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -74,6 +76,7 @@ const App = () => {
       <Navbar totalItems={cart.total_items} />
       <Switch>
         <Route exact path="/">
+          <Banner />
           <Products products={products} onAddToCart={handleAddToCart} />
         </Route>
         <Route exact path="/cart">

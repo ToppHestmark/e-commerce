@@ -6,6 +6,7 @@ export default makeStyles(() => ({
   },
   media: {
     height: 0,
+    position: "relative",
     paddingTop: "56.25%", // 16:9
   },
   cardActions: {
@@ -15,5 +16,6 @@ export default makeStyles(() => ({
   cardContent: {
     display: "flex",
     justifyContent: "space-between",
+    zIndex: 1,
   },
 }));
