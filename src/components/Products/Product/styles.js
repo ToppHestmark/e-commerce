@@ -17,5 +17,6 @@ export default makeStyles(() => ({
     display: "flex",
     justifyContent: "space-between",
     zIndex: 1,
+    opacity: 0.85,
   },
 }));

@@ -15,7 +15,7 @@ const Cart = ({
 
   const EmptyCart = () => (
     <Typography variant="subtitle1">
-      You have no items in your shopping cart,
+      You cart is empty,
       <Link to="/" className={classes.link}>
         {" "}
         start adding some!
@@ -25,7 +25,7 @@ const Cart = ({
 
   const FilledCart = () => (
     <>
-      <Grid container spacing={3}>
+      <Grid container spacing={2}>
         {cart.line_items.map((item) => (
           <Grid item xs={12} sm={4} key={item.id}>
             <CartItem
@@ -37,7 +37,7 @@ const Cart = ({
         ))}
       </Grid>
       <div className={classes.cardDetails}>
-        <Typography variant="h4">
+        <Typography className={classes.subtotal} variant="h6">
           Subtotal: {cart.subtotal.formatted_with_symbol}
         </Typography>
         <div>
@@ -72,7 +72,7 @@ const Cart = ({
   return (
     <Container>
       <div className={classes.toolbar} />
-      <Typography className={classes.title} variant="h3" gutterBottom>
+      <Typography className={classes.title} variant="h4" gutterBottom>
         Your Shopping Cart
       </Typography>
       {!cart.line_items.length ? <EmptyCart /> : <FilledCart />}
