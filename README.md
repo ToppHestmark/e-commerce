@@ -1,4 +1,4 @@
-# E-Commerce store with React
+# E-Commerce store with ReactJS
 
 [Demo app](https://e-shop-dbc41.web.app)
 
@@ -6,9 +6,11 @@ A simple e-commerce website with commerce.js API integrated and dummy products d
 
 ## Dependencies
 
-- [Chec/Commerce.js](https://commercejs.com/)
-- [React Stripe.js](https://stripe.com/docs/stripe-js/react)
-- [Material-UI](https://material-ui.com/getting-started/installation/)
-- [React-bootstrap](https://react-bootstrap.github.io/)
+- Producs API: [Chec/Commerce.js](https://commercejs.com/)
+- Payment option: [React Stripe.js](https://stripe.com/docs/stripe-js/react)
+- Cards & grids from: [Material-UI](https://material-ui.com/getting-started/installation/)
+- Carousel from: [React-bootstrap](https://react-bootstrap.github.io/)
+
+## Screenshots
 
 ![Screenshot](./public/images/Screenshot.jpg)
