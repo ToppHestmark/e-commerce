@@ -11,4 +11,4 @@ A simple e-commerce website with commerce.js API integrated and dummy products d
 - [Material-UI](https://material-ui.com/getting-started/installation/)
 - [React-bootstrap](https://react-bootstrap.github.io/)
 
-![Screenshot](./public/images/screenshot.jpg)
+![Screenshot](./public/images/Screenshot.jpg)
