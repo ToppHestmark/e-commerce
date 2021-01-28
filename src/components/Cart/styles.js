@@ -13,6 +13,9 @@ export default makeStyles((theme) => ({
     [theme.breakpoints.up("xs")]: {
       marginRight: "20px",
     },
+    hover: {
+      backgroundColor: "red",
+    },
   },
   checkoutButton: {
     minWidth: "150px",
