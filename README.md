@@ -13,4 +13,4 @@ A simple e-commerce website with commerce.js API integrated and dummy products d
 
 ## Screenshots
 
-![Screenshot](./public/images/screenshot.jpg)
+![Screenshot](./public/images/Screenshot.jpg)
