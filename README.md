@@ -1,6 +1,7 @@
 # E-Commerce store with ReactJS
 
 [Demo app](https://e-shop-dbc41.web.app)
+NOTE: User might experience slow loading due calling API server.
 
 A simple e-commerce website with commerce.js API integrated and dummy products displayed on the cards. Checkout functionality implemented with shipping options and Stripe payment handler.
 
